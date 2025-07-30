@@ -1,0 +1,29 @@
+{
+  "name": "mintique",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:web": "pnpm --filter web dev",
+    "dev:api": "node node_modules/@nestjs/cli/bin/nest.js start --watch -p apps/api/tsconfig.json",
+    "dev": "concurrently \"pnpm run dev:web\" \"pnpm run dev:api\"",
+    "build:web": "pnpm --filter web build",
+    "build:api": "node node_modules/@nestjs/cli/bin/nest.js build -p apps/api/tsconfig.json",
+    "build": "pnpm run build:web && pnpm run build:api"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.13.1",
+  "dependencies": {
+    "@nestjs/common": "^11.1.5",
+    "@nestjs/core": "^11.1.5",
+    "@nestjs/platform-express": "^11.1.5",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^11.0.9",
+    "concurrently": "^9.2.0"
+  }
+}

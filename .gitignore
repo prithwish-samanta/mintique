@@ -1,0 +1,60 @@
+# ===================================================================
+# General Project Files & Dependencies
+# ===================================================================
+
+# Dependency directories
+/node_modules
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables
+.env*
+!.env.example
+
+# IDE & Editor directories
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# ===================================================================
+# Next.js Frontend Specific (apps/web)
+# ===================================================================
+
+# Build output
+/apps/web/.next/
+
+# Static site export
+/apps/web/out/
+
+# Production build
+/apps/web/build/
+
+# ===================================================================
+# NestJS Backend Specific (apps/api)
+# ===================================================================
+
+# Compiled JavaScript output
+/apps/api/dist
+
+# ===================================================================
+# Other
+# ===================================================================
+
+# TurboRepo cache
+.turbo
+
+# Test results
+coverage
